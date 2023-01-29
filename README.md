@@ -11,11 +11,16 @@ Our implementation uses pytorch-lightning framework with Pytorch version 1.12.0 
 
 Install by conda
 ```bash
-conda create
-conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
+conda create -n cad python=3.8 
+conda activate cad
+
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch -y
+conda install -c conda-forge pytorch-lightning -y
+conda install tensorboardX -y 
+
 ```
 
-Other dependency please refer to `requirement.txt`
+Other dependency or installed by pip please refer to `requirement.txt`.
 
 ## RUN 
 First, please put datasets(SMD, SWaT, WADI) under dataset folder. (Or modify path in `gen_data.py`). SMD is available in https://github.com/NetManAIOps/OmniAnomaly; SWaT and WADI are available in https://itrust.sutd.edu.sg/itrust-labs_datasets/dataset_info/. SWaT and WADI needs to be transformed to csv file manually. 
