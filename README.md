@@ -72,17 +72,17 @@ python get_score.py --dataset WADI
 ```
 
 ## Score and Label file
-The original result files are saved in folder `%dataset/%data_name/`, including `y.npy`(orignal values in testset), `y_hat.npy`(predicted values in testset), `y_label.txt`(anomaly score of testsets)
+The original result files are saved in folder `<dataset>/<data_name>/`, including `y.npy`(orignal values in testset), `y_hat.npy`(predicted values in testset), `y_label.txt`(anomaly score of testsets)
 
 ## Run Your Own Data
 ### If the dataset contains multiple entities like SMD:
-1. Add data preprocess function like gen_SMD in `gen_data.py`. **MaxMinScalar and clip is needed.**
+1. Add data preprocess function like gen_SMD in `gen_data.py`. **MaxMinScaler and clip are needed.**
 2. Add your own dataset in the `main` function in `get_score.py` like SMD.
 3. Write your own script like `run_SMD.sh`.
 
-### If the dataset contains only one entities like SWaT:
-1. Add data preprocess function like gen_SWaT in `gen_data.py`. **MaxMinScalar and clip is needed.**
+### If the dataset contains only one entity like SWaT:
+1. Add data preprocess function like gen_SWaT in `gen_data.py`. **MaxMinScaler and clip are needed.**
 2. Add your own dataset in the `main` function in `get_score.py` like SWaT.
 3. Write your own script like `run_SWaT.sh`.
 
-The other processes are just like above.
+### The other processes are just like above.
