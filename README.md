@@ -19,7 +19,7 @@ conda create -n cad python=3.8
 conda activate cad
 
 conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch -y
-conda install -c conda-forge pytorch-lightning -y
+conda install -c conda-forge pytorch-lightning==1.8.0 -y
 conda install tensorboardX -y 
 
 ```
