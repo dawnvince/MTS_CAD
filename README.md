@@ -31,7 +31,7 @@ Other dependency or installed by pip please refer to `requirement.txt`.
 ### Access to data
 First, please put datasets(SMD, SWaT, WADI) under dataset folder. (Or modify path in `gen_data.py`). SMD is available in https://github.com/NetManAIOps/OmniAnomaly; SWaT and WADI are available in https://itrust.sutd.edu.sg/itrust-labs_datasets/dataset_info/. SWaT and WADI needs to be transformed to csv file manually. 
 
-***Attention***: We choose latest SWaT.A2_Dec 2015(Version 1) and WADI.A2. Detailed information can be found in [Here](DatasetDetails.md).
+***Attention***: We choose latest SWaT.A2_Dec 2015(Version 1) and WADI.A2. Detailed information can be found in [DatasetDetails.md](DatasetDetails.md).
 
 ### preprocess data
 ```
